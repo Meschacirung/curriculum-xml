@@ -2,8 +2,28 @@
 
 <bank>
     <candidate>
-        <personnal>
-            <nom>
+        <personnal gender="M" adress="Kassapa">
+            <doc name="Passport" code="68HKDN9"/>
+            <nomcomplet nom="Chibumbu" postnom="Irung" prenom="Méschac"/>
+            <birth date="27.07.1999" city="Ntita"/>
+            <phones>
+                <phone number="0976189038" operator="Airtel" type="personnel"/>
+                <phone number="0996660438" operator="Airtel" type="professionel"/>
+            </phones>
+            <emails>
+                <email content="meschacirung@gmail.com" type="personnel" />
+                <email content="18cy039@esisalama.org" type="universitaire" />
+                <email content="m.irung@devscast.tech" type="professionnel" />
+                <email content="design@zxconnect.org" type="professionnel" />
+            </emails>
         </personnal>
+
+        <studies>
+            <diploma title="" date="" skills="" />
+        </studies>
+
+        <experience>
+            <work company="" time="" description="" />
+        </experience>
     </candidate>
 </bank>
