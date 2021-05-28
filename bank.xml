@@ -3,27 +3,31 @@
 <bank>
     <candidate>
         <personnal gender="M" adress="Kassapa">
-            <doc name="Passport" code="68HKDN9"/>
-            <nomcomplet nom="Chibumbu" postnom="Irung" prenom="Méschac"/>
+            <doc code="68HKDN9">NSI</doc>
+            <fullname name="Chibumbu" subname="Irung" firstname="Méschac"/>
             <birth date="27.07.1999" city="Ntita"/>
             <phones>
-                <phone number="0976189038" operator="Airtel" type="personnel"/>
-                <phone number="0996660438" operator="Airtel" type="professionel"/>
+                <phone operator="Airtel" type="personnel">0976189038</phone>
+                <phone operator="Airtel" type="professionel">0996660438</phone>
             </phones>
             <emails>
-                <email content="meschacirung@gmail.com" type="personnel" />
-                <email content="18cy039@esisalama.org" type="universitaire" />
-                <email content="m.irung@devscast.tech" type="professionnel" />
-                <email content="design@zxconnect.org" type="professionnel" />
+                <email type="personnel">meschacirung@gmail.com</email>
+                <email type="academique">18cy039@esisalama.org</email>
+                <email type="professionnel">m.irung@devscast.tech</email>
+                <email type="professionnel">design@zxconnect.org</email>
             </emails>
         </personnal>
 
         <studies>
-            <diploma title="" date="" skills="" />
+            <diploma title="Marketing Numérique" year="2019"> 
+                <description>
+                    Les principes de base du marketing numérique
+                </description>
+            </diploma>
         </studies>
 
         <experience>
-            <work company="" time="" description="" />
+            <work company="" time="">Stage professionnel UX / UI Designer </work>
         </experience>
     </candidate>
 </bank>

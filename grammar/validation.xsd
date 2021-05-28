@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:element name="bank" version="1.0">
+    <xsd:complexType>
+        <xsd:all>
+            <xsd:element name="candidate">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="personnal">
+                            <xsd:complexType>
+                                <xsd:attribute name="gender" type="xsd:string" use="required"></xsd:attribute>
+                                <xsd:attribute name="adress" type="xsd:string" use="required"></xsd:attribute>
+
+                                <xsd:sequence>
+                                    <xsd:element name="doc">
+                                        <xsd:complexType>
+                                            <xsd:simpleContent>
+                                                <xsd:extension base="xsd:string">
+                                                    <xsd:attribute name="code" type="xsd:string" use="required"></xsd:attribute>
+                                                </xsd:extension>
+                                            </xsd:simpleContent>
+                                        </xsd:complexType>
+                                    </xsd:element>
+
+                                    <xsd:element name="fullname">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+                                            <xsd:attribute name="subname" type="xsd:string" use="required"></xsd:attribute>
+                                            <xsd:attribute name="fistname" type="xsd:string" use="required"></xsd:attribute>
+                                        </xsd:complexType>
+                                    </xsd:element>
+
+                                    <xsd:element name="birth">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="date" type="xsd:date" use="required"></xsd:attribute>
+                                            <xsd:attribute name="city" type="xsd:string" use="required"></xsd:attribute>
+                                        </xsd:complexType>
+                                    </xsd:element>
+
+                                    <xsd:element name="phones">
+                                        <xsd:complexType>
+                                            <xsd:all>
+                                                <xsd:element name="phone">
+                                                    <xsd:complexType>
+                                                        <xsd:simpleContent>
+                                                            <xsd:extension base="xsd:string">
+                                                                <xsd:attribute name="type" type="xsd:string" use="required"></xsd:attribute>
+                                                                <xsd:attribute name="operator" type="xsd:string" use="required"></xsd:attribute>
+                                                            </xsd:extension>
+                                                        </xsd:simpleContent>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                            </xsd:all>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="emails">
+                                        <xsd:complexType>
+                                            <xsd:all>
+                                                <xsd:element name="email">
+                                                    <xsd:complexType>
+                                                        <xsd:simpleContent>
+                                                            <xsd:extension base="xsd:email">
+                                                                <xsd:attribute name="type" type="xsd:string" use="required"></xsd:attribute>
+                                                            </xsd:extension>
+                                                        </xsd:simpleContent>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                            </xsd:all>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+
+                        <xsd:element name="studies">
+                            <xsd:complexType>
+                                <xsd:all>
+                                    <xsd:element name="diploma">
+                                        <xsd:complexType mixed="true">
+                                            <xsd:all>
+                                            </xsd:all>
+                                            <xsd:attribute name="title" type="xsd:string"></xsd:attribute>
+                                            <xsd:attribute name="year" type="xsd:date"></xsd:attribute>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                </xsd:all>
+                            </xsd:complexType>
+                        </xsd:element>
+
+                        <xsd:element name="experience">
+                            <xsd:complexType>
+                                <xsd:all>
+                                    <xsd:element name="work">
+                                        <xsd:complexType>
+                                            <xsd:all>
+                                                <xsd:element name="description">
+                                                    <xsd:complexType mixed="true">
+                                                        <xsd:all>
+                                                        </xsd:all>
+                                                        <xsd:attribute></xsd:attribute>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                            </xsd:all>
+                                            <xsd:attribute name="company" type="xsd:string" use="required"></xsd:attribute>
+                                            <xsd:attribute name="time" type="xsd:date" use="required"></xsd:attribute>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                </xsd:all>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+</xsd:element>
