@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<bank>
+<bank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="grammar/validation.xsd">
     <candidate>
         <personnal gender="M" adress="Kassapa">
             <doc code="68HKDN9">NSI</doc>
@@ -19,15 +19,15 @@
         </personnal>
 
         <studies>
-            <diploma title="Marketing Numérique" year="2019"> 
-                <description>
-                    Les principes de base du marketing numérique
-                </description>
+            <diploma title="Titre" year=""> 
+                <description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, hic eius! Magni qui ducimus repellendus optio quisquam necessitatibus, totam saepe. Hic deleniti aut doloremque eveniet alias aspernatur praesentium laborum velit!</description>
             </diploma>
         </studies>
 
         <experience>
-            <work company="" time="">Stage professionnel UX / UI Designer </work>
+            <work company="Zc" time="6728">
+                <description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, hic eius! Magni qui ducimus repellendus optio quisquam necessitatibus, totam saepe. Hic deleniti aut doloremque eveniet alias aspernatur praesentium laborum velit!</description>
+            </work>
         </experience>
     </candidate>
 </bank>
