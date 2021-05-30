@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     
     <xsd:element name="bank">
         <xsd:complexType>
-            <xsd:all>
-                <xsd:element name="candidate">
+            <xsd:sequence>
+                <xsd:element name="cv" minOccurs="1" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="personnal">
@@ -38,28 +37,59 @@
 
                                         <xsd:element name="phones">
                                             <xsd:complexType>
-                                                <xsd:all>
-                                                    <xsd:element name="phone" minOccurs="1">
+                                                <xsd:sequence>
+                                                    <xsd:element name="phone" minOccurs="0" maxOccurs="unbounded">
                                                         <xsd:complexType>
-                                                            <xsd:attribute name="type" type="xsd:string" use="required"></xsd:attribute>
-                                                            <xsd:attribute name="operator" type="xsd:string" use="required"></xsd:attribute>
-                                                            <xsd:attribute name="content" type="xsd:string" use="required"></xsd:attribute>
+                                                            <xsd:simpleContent>
+                                                                <xsd:extension base="xsd:string">
+                                                                    <xsd:attribute name="type">
+                                                                        <xsd:simpleType>
+                                                                            <xsd:restriction base="xsd:string"> 
+                                                                                <xsd:enumeration value="maison"></xsd:enumeration>
+                                                                                <xsd:enumeration value="personnel"></xsd:enumeration>
+                                                                                <xsd:enumeration value="bureau"></xsd:enumeration>
+                                                                            </xsd:restriction>
+                                                                        </xsd:simpleType>
+                                                                    </xsd:attribute>
+                                                                    <xsd:attribute name="operator">
+                                                                        <xsd:simpleType>
+                                                                            <xsd:restriction base="xsd:string">
+                                                                                <xsd:enumeration value="Airtel"></xsd:enumeration>
+                                                                                <xsd:enumeration value="Orange"></xsd:enumeration>
+                                                                                <xsd:enumeration value="Vodacom"></xsd:enumeration>
+                                                                                <xsd:enumeration value="Africell"></xsd:enumeration>
+                                                                            </xsd:restriction>
+                                                                        </xsd:simpleType>
+                                                                    </xsd:attribute>
+                                                                </xsd:extension>
+                                                            </xsd:simpleContent>
                                                         </xsd:complexType>
                                                     </xsd:element>
-                                                </xsd:all>
+                                                </xsd:sequence>
                                             </xsd:complexType>
                                         </xsd:element>
                                         
                                         <xsd:element name="mails">
-                                            <xsd:complexType mixed="true">
-                                                <xsd:all>
-                                                    <xsd:element name="mail">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="mail" minOccurs="0" maxOccurs="unbounded" default="personnel">
                                                         <xsd:complexType>
-                                                            <xsd:attribute name="type" type="xsd:string" use="required"></xsd:attribute>
-                                                            <xsd:attribute name="content" type="xsd:string" use="required"></xsd:attribute>
+                                                            <xsd:simpleContent>
+                                                                <xsd:extension base="xsd:string">
+                                                                    <xsd:attribute name="type">
+                                                                        <xsd:simpleType>
+                                                                            <xsd:restriction base="xsd:string">
+                                                                                <xsd:enumeration value="academique"></xsd:enumeration>
+                                                                                <xsd:enumeration value="personnel"></xsd:enumeration>
+                                                                                <xsd:enumeration value="professionnel"></xsd:enumeration>
+                                                                            </xsd:restriction>
+                                                                        </xsd:simpleType>
+                                                                    </xsd:attribute>
+                                                                </xsd:extension>
+                                                            </xsd:simpleContent>
                                                         </xsd:complexType>
                                                     </xsd:element>
-                                                </xsd:all>
+                                                </xsd:sequence>
                                             </xsd:complexType>
                                         </xsd:element>
                                     </xsd:sequence>
@@ -103,7 +133,7 @@
                                                     </xsd:element>
                                                 </xsd:all>
                                                 <xsd:attribute name="company" type="xsd:string" use="required"></xsd:attribute>
-                                                <xsd:attribute name="time" type="xsd:gYear" use="required"></xsd:attribute>
+                                                <xsd:attribute name="year" type="xsd:gYear" use="required"></xsd:attribute>
                                             </xsd:complexType>
                                         </xsd:element>
                                     </xsd:all>
@@ -112,7 +142,7 @@
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
-            </xsd:all>
+            </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 

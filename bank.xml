@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet type="text/xsl" href="transform.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="transform/print.xsl" ?>
 
 <bank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="grammar/validation.xsd">
-    <candidate>
+    <cv>
         <personnal gender="M" adress="Kassapa">
-            <doc code="68HKDN9">NSI</doc>
+            <doc code="68HKDN9">Passport</doc>
             <fullname name="Chibumbu" subname="Irung" firstname="Méschac"/>
             <birth date="1999-09-24" city="Ntita"/>
             <phones>
-                <phone operator="Airtel" type="personnel" content="0976189038" />
-                <phone operator="Airtel" type="professionel" content="0996660438" />
+                <phone operator="Airtel" type="personnel"> 0976189038</phone>
+                <phone operator="Africell" type="personnel"> 0996662819</phone>
             </phones>
             <mails>
-                <mail type="personnel" content="meschacirung@gmail.com" />
-                <mail type="academique" content="18cy039@esisalama.org" />
-                <mail type="professionnel" content="m.irung@devscast.tech" />
-                <mail type="professionnel" content="design@zxconnect.org" />
+                <mail type="personnel">meschacirung@gmail.com</mail> 
+                <mail type="academique">18cy039@esisalama.org</mail>
+                <mail type="professionnel">m.irung@devscast.tech</mail>
+                <mail type="professionnel">design@zxconnect.org</mail>
             </mails>
         </personnal>
 
@@ -26,9 +26,9 @@
         </studies>
 
         <experience>
-            <work company="Zc" time="6728">
+            <work company="Zc" year="6728">
                 <description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, hic eius! Magni qui ducimus repellendus optio quisquam necessitatibus, totam saepe. Hic deleniti aut doloremque eveniet alias aspernatur praesentium laborum velit!</description>
             </work>
         </experience>
-    </candidate>
+    </cv>
 </bank>
