@@ -88,34 +88,20 @@
             
                             <div class="experience">
                                 <h2>3. Experience professionel</h2>
-                                <xsl:for-each select="bank/cv/experience">
+                                <xsl:for-each select="bank/cv/experience/work">
                                     <div class="work">
                                         <div class="s-head">
                                             <div class="title">
-                                                <h3><xsl:value-of select="experience/@company"></xsl:value-of></h3>
-                                                <p><xsl:value-of select="experience/@year"></xsl:value-of></p>
+                                                <h3><xsl:value-of select="@company"></xsl:value-of></h3>
+                                                <p><xsl:value-of select="@duree"></xsl:value-of></p>
                                             </div>
                                         </div>
                 
                                         <div class="description">
-                                            <p><xsl:value-of select="experience/description"></xsl:value-of></p>
+                                            <p><xsl:value-of select="description"></xsl:value-of></p>
                                         </div>
                                     </div>
                                 </xsl:for-each>
-                            </div>
-            
-                            <div class="other">
-                                <h2>2. Etudes</h2>
-                                <div class="diploma">
-                                    <div>
-                                        <h3>Titre</h3>
-                                        <p>Année</p>
-                                    </div>
-            
-                                    <div class="description">
-            
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
