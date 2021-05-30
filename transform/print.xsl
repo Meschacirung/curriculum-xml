@@ -17,7 +17,7 @@
                     <div class="head">
                         <img class="avatar" src="" alt="user avatar"/>
                         <div class="right-side right">
-                            <h1>Méschac Irung</h1>
+                            <h1><xsl:value-of select="bank/cv/personnal/fullname/@firstname"></xsl:value-of> <xsl:value-of select="bank/cv/personnal/fullname/@subname"></xsl:value-of></h1>
                             <p>UX Designer</p>
                         </div>
                     </div>
