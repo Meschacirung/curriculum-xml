@@ -1,0 +1,204 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(238, 247, 252);
+}
+
+h1, h2{
+    color: rgb(45, 255, 185);
+    line-height:12px;
+}
+
+h3{
+    color: rgb(90, 150, 130);
+    line-height:12px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 400; 
+}
+
+p{
+    color: rgb(114, 126, 136);
+}
+
+li{
+    margin-left:-20px;
+    list-style:disc;
+    color: rgb(76, 82, 87);
+    margin-top:16px;
+    font-weight: 500;
+}
+
+ul{
+    padding-top:4px;
+}
+
+.type{
+    margin:0 12px;
+    font-size:14px;
+    font-weight:400;
+    color: rgb(150, 160, 170);
+}
+
+.s-title{
+    width:60%;
+    font-weight: 400;
+}
+
+.line{
+    padding:12px;
+    border-radius:4px;
+    display: flex;
+    width: 70%;
+    margin-left:-12px;
+    margin-top:-16px;
+    transition: all .5s;
+    cursor:default;
+}
+
+.line:hover{
+    background: rgb(248, 248, 248);
+}
+
+span{
+    color: rgb(84, 93, 100);
+    font-weight: 500;
+}
+
+.bank{
+    display: grid;
+    gap:60px;
+    padding:120px 0;
+    width:70%;
+    margin: auto;
+}
+
+.candidat{
+    background: #fff;
+    border-radius:25px;
+}
+
+.head{
+    z-index:200;
+    position: sticky;
+    top:0;
+
+    margin-top:25px;
+    display:flex;
+    align-items: center;
+    gap:12px;
+
+    padding:0 0 0 64px;
+    border-width: 80%;
+
+    background: rgba(255, 255, 255, 0.582);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+}
+
+
+.right-side{
+    width:80%;
+    margin-left: auto;
+}
+
+.right{
+    padding:24px 0;
+    border-bottom:4px solid rgb(238, 247, 252);
+}
+
+.avatar{
+    border-radius:50%;
+    width:120px;
+    height:120px;
+}
+
+.main-content{
+    display: flex;
+    padding:32px 64px 64px 80px;
+}
+
+.data{
+    display: flex;
+    gap:24px;
+    padding-top:16px;
+}
+
+.operator{
+    font-size:12px;
+    font-weight:500;
+    padding:4px 8px;
+    border-radius:50px;
+}
+
+.o-airtel, .o-vodacom{
+    color: rgb(238, 49, 49);
+    background: rgb(248, 236, 236);
+}
+
+.o-orange, .africel{
+    color: rgb(238, 140, 49);
+    background: rgb(248, 245, 236);
+}
+
+.mt-16{
+    padding-top:24px;
+}
+
+.s-head{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding-left: 14px;
+}
+
+.s-head::before{
+    content:"";
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    border:2px solid rgb(238, 238, 238);
+}
+
+.diploma, .work{
+    position: relative;
+    margin-left: auto;
+}
+
+.description{
+    padding-left:32px;
+}
+
+.description::before{
+    height:50%;
+    width:2px;
+    background: rgb(238, 238, 238);
+    position: absolute;
+    left:0;
+    content:"";
+    margin-left:8px;
+}
+
+.studies, .experience, .other{
+    margin-top:64px;
+}

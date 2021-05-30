@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl" ?>
 
 <bank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="grammar/validation.xsd">
     <candidate>
         <personnal gender="M" adress="Kassapa">
             <doc code="68HKDN9">NSI</doc>
             <fullname name="Chibumbu" subname="Irung" firstname="Méschac"/>
-            <birth date="27.07.1999" city="Ntita"/>
+            <birth date="1999-09-24" city="Ntita"/>
             <phones>
-                <phone operator="Airtel" type="personnel">0976189038</phone>
-                <phone operator="Airtel" type="professionel">0996660438</phone>
+                <phone operator="Airtel" type="personnel" content="0976189038" />
+                <phone operator="Airtel" type="professionel" content="0996660438" />
             </phones>
-            <emails>
-                <email type="personnel">meschacirung@gmail.com</email>
-                <email type="academique">18cy039@esisalama.org</email>
-                <email type="professionnel">m.irung@devscast.tech</email>
-                <email type="professionnel">design@zxconnect.org</email>
-            </emails>
+            <mails>
+                <mail type="personnel" content="meschacirung@gmail.com" />
+                <mail type="academique" content="18cy039@esisalama.org" />
+                <mail type="professionnel" content="m.irung@devscast.tech" />
+                <mail type="professionnel" content="design@zxconnect.org" />
+            </mails>
         </personnal>
 
         <studies>
-            <diploma title="Titre" year=""> 
+            <diploma title="Titre" year="2002"> 
                 <description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, hic eius! Magni qui ducimus repellendus optio quisquam necessitatibus, totam saepe. Hic deleniti aut doloremque eveniet alias aspernatur praesentium laborum velit!</description>
             </diploma>
         </studies>
